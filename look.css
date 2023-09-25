@@ -1,0 +1,133 @@
+header h1{
+    background-color: #0e161d;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin: 0;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    height: 80px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    color:rgb(255, 169, 169);
+    text-shadow: 2px 2px 1px black;
+    font-size: 20px;
+}
+
+
+.flex-container li{
+    flex: 1;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.navegador-interno a, .navegador-externo a{
+    text-decoration: none;
+}
+
+.navegador-interno a:hover, .navegador-externo a:hover{
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navegador-interno a:visited, .navegador-externo a:visited{
+    color:rgb(252, 219, 219);
+}
+
+.navegador-interno{
+    background-color: #5C8984;
+}
+
+.navegador-externo{
+    background-color: #9DB2BF;
+}
+
+header ul{
+    list-style: none;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: justify;
+}
+
+tr ul, ol{
+    margin: 12px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.textCen{
+    text-align: center;
+}
+
+.noJust{
+    text-align: left;
+}
+
+footer{
+    text-align: center;
+}
+
+main, footer{
+    font-family: sans-serif;
+}
+
+.piePag{
+    height: 85px;
+    margin: 0;
+    padding: 10px;
+    background-color: #0e161d;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+body{
+    background-color: rgb(236, 234, 234);
+}
+
+.bordeBajo{
+    border-bottom: 2px solid black;
+}
+
+
+caption{
+    background-color: #f1939363; 
+    border: 1px solid black;
+    border-bottom: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+h2{
+    margin: 10px;
+}
+
+.presentacionTablas{
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px black;
+}
+
+.presentacionTablas a img{
+    width: 20px;
+    margin: 10px;
+}
+
+.presentacionTablas a img:hover{
+    width: 25px;
+}
+
+.final{
+    justify-content: center;
+    background-color: aliceblue;
+}

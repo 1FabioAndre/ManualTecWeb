@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="look.css">
+    <title>Manual HTML</title>
+</head>
+<body>
+    <header>
+        <div class="bordeBajo">
+            <h1 id="principal">MANUAL HTML</h1>
+        </div>  
+        <nav class="navegador-externo bordeBajo">
+            <ul class="flex-container">
+                <li href="flex-item"><a href="../index.html">Volver al inicio</a></li>
+                <li href="flex-item"><a href="#pie">Pie de pagina</a></li>
+            </ul>
+        </nav>
+        <nav class="navegador-interno bordeBajo">
+            <ul class="flex-container">
+                <li href="flex-item"><a href="#Egen">Elementos Genericos</a></li>
+                <li href="flex-item"><a href="#Ebas">Elementos Basicos</a></li>
+                <li href="flex-item"><a href="#mantex">Elementos de manejo de texto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-container presentacionTablas">
+            <h2 id="Egen">Elementos genericos</h2>
+            <a href="#principal">
+                <img src="https://cdn-icons-png.flaticon.com/256/2026/2026901.png" alt="volver al encabezado">
+            </a>
+        </div>
+        <table>
+            <caption>Listado de etiquetas de Elementos Genericos</caption>
+            <thead> 
+                <tr>
+                    <th class="textCen">Elemento</th>
+                    <th class="textCen">Descripcion</th>
+                    <th class="textCen">Documentacion</th>
+                    <th class="textCen">Uso</th>
+                    <th class="textCen">Ejemplo</th>
+                    <th class="textCen">Resultado</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td class="textCen">&lt;div&gt;</td>
+                    <td>Crea secciones o agrupa contenido</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="new" title="Documentación">div</a></td>
+                    <td><p>El elemento div debe usarse solo cuando no haya otro elemento semántico (como artícle o nav) es apropiado.</p></td>
+                    <td>
+                        &lt;div&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Este es un párrafo dentro de un div.<br>
+                        &nbsp;&nbsp;&lt;p&gt;<br>
+                        &lt;/div&gt;
+                    </td>
+                    <td><p>Este es un párrafo dentro de un div.</p></td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;span&gt;</td>
+                    <td>Contenedor genérico en línea para redactar contenido, que no representa inherentemente nada</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="new" title="Documentación">span</a></td>
+                    <td><p>Se puede usar para agrupar elementos con fines de estilo (usando class. o id), o porque comparten valores de atributo, como lang . Debe usarse solo cuando ningún otro elemento semántico es apropiado. span es muy parecido a un elemento div, pero div es un elemento de nivel de bloque, mientras que un span es un elemento en línea.</p></td>
+                    <td>
+                        &lt;p&gt;Este es un párrafo con un &lt;span&gt;texto destacado&lt;/span&gt; dentro.&lt;/p&gt;
+                    </td>
+                    <td>
+                        <p>Este es un párrafo con un <span>texto destacado</span> dentro.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;header&gt;</td>
+                    <td>El elemento HTML header representa contenido introductorio, normalmente un grupo de elementos introductorios o ayudas a la navegación. Puede contener algunos elementos de encabezado, pero también un logotipo, un formulario de búsqueda, un autor nombre, y otros elementos.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="new" title="Documentación">header</a></td>
+                    <td><p>El elemento header tiene un significado idéntico al rol de punto de referencia de banner en todo el sitio, a menos que esté anidado dentro del contenido de seccionamiento. Entonces, el elemento header no es un punto de referencia.
+                        El elemento header puede definir un encabezado de sitio global, descrito como un banner en el árbol de accesibilidad. Por lo general, incluye un logotipo, el nombre de la empresa, la función de búsqueda y, posiblemente, la navegación global o un lema. Por lo general, se encuentra en la parte superior de la página.
+                        De lo contrario, es una sección en el árbol de accesibilidad y, por lo general, contiene las secciones circundantes encabezado (un elemento h1 - h6) y subtítulo opcional, pero no es obligatorio.</p></td>
+                    <td class="noJust">
+                        &lt;header&gt;<br>
+                        &nbsp;&nbsp;&lt;h1&gt;Título&lt;/h1&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es un párrafo dentro del encabezado.&lt;/p&gt;<br>
+                        &lt;/header&gt;
+                    </td>   
+                    <td>
+                        <h1>Título</h1>
+                        <p>Este es un párrafo dentro del encabezado.</p>
+                    </td>   
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;article&gt;</td>
+                    <td>El elemento HTML article representa una composición autocontenida en un documento, página, aplicación, o sitio, que está destinado a ser distribuible o reutilizable de forma independiente (por ejemplo, en sindicación). Los ejemplos incluyen: una publicación en un foro, un artículo de una revista o periódico, o una entrada de blog, un tarjeta de producto, un comentario enviado por el usuario, un widget o gadget interactivo o cualquier otro elemento de contenido.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article" target="new" title="Documentación">article</a></td>
+                    <td><p>Se puede usar para agrupar elementos con fines de estilo (usando class. o id), o porque comparten valores de atributo, como lang . Debe usarse solo cuando ningún otro elemento semántico es apropiado. span es muy parecido a un elemento div, pero div es un elemento de nivel de bloque, mientras que un span es un elemento en línea.</p></td>
+                    <td>
+                        &lt;article&gt;<br>
+                        &nbsp;&nbsp;&lt;h2&gt;Título del Artículo&lt;/h2&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es un artículo de ejemplo que contiene contenido interesante.&lt;/p&gt;<br>
+                        &lt;/article&gt;
+                    </td>
+                    <td>
+                        <h2>Título del Artículo</h2>
+                        <p>Este es un artículo de ejemplo que contiene contenido interesante.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;section&gt;</td>
+                    <td>El elemento HTML section representa una sección independiente genérica de un documento, que no tener un elemento semántico más específico para representarlo. Las secciones siempre deben tener un encabezado, con muy pocas excepciones.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section" target="new" title="Documentación">section</a></td>
+                    <td>
+                        <p>Como se mencionó anteriormente, section  es un elemento de sección genérico, y solo debe usarse si no hay
+                            un elemento más específico para representarlo. Como ejemplo, un menú de navegación debe estar envuelto en un
+                            elemento  nav, pero una lista de resultados de búsqueda o una visualización de mapa y sus controles no tienen
+                            elementos, y podría colocarse dentro de una sección.
+                        </p>
+                        <ul>
+                            <li>Si el contenido del elemento representa una unidad atómica independiente de contenido que tiene sentido
+                                    sindicado como una pieza independiente (por ejemplo, una publicación de blog o un comentario de blog, o un artículo de periódico), el
+                                    artículo  elemento sería una mejor opción.</li>
+                            <li>Si los contenidos representan información tangencial útil que funciona junto con el contenido principal,
+                                pero no es directamente parte de él (como enlaces relacionados o una biografía del autor), use un aside.</li>
+                            <li>Si el contenido representa el área de contenido principal de un documento, utilice main .</li>
+                            <li> Si solo utiliza el elemento como envoltorio de estilo, utilice un div en su lugar.</li>
+                        </ul>
+                    </td>
+                    <td class="noJust">
+                        &lt;section&gt;<br>
+                        &nbsp;&nbsp;&lt;h2&gt;Título de la Sección&lt;/h2&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es un párrafo dentro de la sección.&lt;/p&gt;<br>
+                        &lt;/section&gt;
+                    </td>
+                    <td>
+                        <h2>Título de la Sección</h2>
+                        <p>Este es un párrafo dentro de la sección.</p>  
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;nav&gt;</td>
+                    <td>El elemento HTML nav representa una sección de una página cuyo propósito es proporcionar navegación enlaces, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de navegación las secciones son menús, tablas de contenido e índices.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="new" title="Documentación">nav</a></td>
+                    <td>
+                        <ul>
+                            <li>No es necesario que todos los enlaces estén contenidos en un elemento  nav.  nav  está destinado solo para un
+                                bloque principal de enlaces de navegación; por lo general, el elemento footer a menudo tiene una lista de enlaces que no
+                                debe estar en un elemento  nav.</li>
+                            <li>Un documento puede tener varios elementos nav, por ejemplo, uno para la navegación del sitio y otro para
+                                navegación dentro de la página. aria-labelledby se puede utilizar en tal caso para promover la accesibilidad, consulte
+                                ejemplo.</li>
+                            <li>Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios discapacitados, pueden utilizar este elemento para determinar
+                                si se omite la representación inicial del contenido de solo navegación.</li>
+                        </ul>
+                    </td>
+                    <td class="noJust">
+                        &lt;nav&gt;<br>
+                        &nbsp;&nbsp;&lt;ul&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;ahref="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt;<br>
+                        &nbsp;&nbsp;&lt;/ul&gt;<br>
+                        &lt;/nav&gt;
+                    </td>
+                    <td>
+                        <nav>
+                            <ul>
+                              <li><a href="#">Inicio</a></li>
+                              <li><a href="#">Acerca de</a></li>
+                              <li><a href="#">Servicios</a></li>
+                            </ul>
+                          </nav>                          
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;aside&gt;</td>
+                    <td>El elemento HTML aside representa una parte de un documento cuyo contenido es solo indirecto relacionado con el contenido principal del documento. Los asides se presentan con frecuencia como barras laterales o llamadas cuadro.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside" target="new" title="Documentación">aside</a></td>
+                    <td>No utilice el elemento aside para etiquetar texto entre paréntesis, ya que este tipo de texto se considera parte del flujo principal.</td>
+                    <td>
+                        &lt;aside&gt;<br>
+                        &nbsp;&nbsp;&lt;h2&gt;Contenido Adicional&lt;/h2&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es un contenido adicional que se encuentra en un aside.&lt;/p&gt;<br>
+                        &lt;/aside&gt;
+                    </td>
+                    <td>
+                        <aside>
+                            <h2>Contenido Adicional</h2>
+                            <p>Este es un contenido adicional que se encuentra en un aside.</p>
+                        </aside>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;footer&gt;</td>
+                    <td>El elemento HTML footer representa un pie de página para el contenido de sección de su antecesor más cercano o seccionamiento del elemento raíz. Un footer normalmente contiene información sobre el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="new" title="Documentación">footer</a></td>
+                    <td>
+                        <ul>
+                            <li>Incluya información sobre el autor en un elemento  address  que se pueda incluir en el
+                            elemento  footer.</li>
+                            <li>Cuando el contenido de seccionamiento del antepasado o el elemento raíz de seccionamiento más cercano es el elemento body
+                            el pie de página se aplica a toda la página.</li>
+                            <li>El elemento  footer  no secciona el contenido y, por lo tanto, no introduce una nueva sección en
+                            contorno.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        &lt;footer&gt;<br>
+                        &nbsp;&nbsp;&lt;h2&gt;Pie de Página&lt;/h2&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es un párrafo dentro del pie de página.&lt;/p&gt;<br>
+                        &lt;/footer&gt;
+                    </td>
+                    <td>
+                        <h2>Pie de Página</h2>
+                        <p>Este es un párrafo dentro del pie de página.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;main&gt;</td>
+                    <td>El elemento HTML main representa el contenido dominante del body de un documento. Principal el área de contenido consiste en contenido que está directamente relacionado o amplía el tema central de un documento, o la funcionalidad central de una aplicación.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="new" title="Documentación">main</a></td>
+                    <td>El contenido de un elemento main debe ser exclusivo del documento. Contenido que se repite en todas partes un conjunto de documentos o secciones de documentos, como barra lateral, enlaces de navegación, información de derechos de autor, los logotipos del sitio y los formularios de búsqueda no deben incluirse a menos que el formulario de búsqueda sea la función principal del pagina. </td>
+                    <td>
+                        &lt;main&gt;<br>
+                        &nbsp;&nbsp;&lt;h1&gt;Contenido Principal&lt;/h1&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es el contenido principal de la página.&lt;/p&gt;<br>
+                        &lt;/main&gt;
+                    </td>
+                    <td>
+                        <main>
+                            <h1>Contenido Principal</h1>
+                            <p>Este es el contenido principal de la página.</p>
+                        </main>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="flex-container presentacionTablas">
+            <h2 id="Ebas">Elementos basicos</h2>
+            <a href="#principal">
+                <img src="https://cdn-icons-png.flaticon.com/256/2026/2026901.png" alt="volver al encabezado">
+            </a>
+        </div>
+        <table>
+            <caption>Listado de etiquetas de Elementos Basicos</caption>
+            <thead>
+                <tr id="tabla2">
+                    <th class="textCen">Elemento</th> 
+                    <th class="textCen">Descripción</th>
+                    <th class="textCen">Documentación</th>
+                    <th class="textCen">Uso</th> 
+                    <th class="textCen">Ejemplo</th>
+                    <th class="textCen">Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="textCen">&lt;html&gt;</td>
+                    <td>
+                        Es la raiz de un documento html, todo elemento es descendiente de este.
+                    </td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="new" title="Documentación">html</a></td>
+                    <td><p>Se puede usar con el atributo lang que ayuda a las tecnologias de lectura de pantalla a determianr el idioma para una correcta pronunciacion, sin el los lectores de pantalla usaran el lenguaje por defecto del sistema operativo causando errores de pronunciacion, esto tambien garantiza que metadatos importantes en head o title igual se pronuncien correctamente</p></td>
+                    <td class="noJust">
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Título Página&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Encabezado&lt;/h1&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Este es el contenido.&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </td>
+                    <td>
+                        <h1>Encabezado</h1>
+                        <p>Este es el contenido.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;title&gt;</td>
+                    <td>El elemento HTML title define el título del documento que se muestra en la barra de título de un navegador o en un pestaña de la página. Solo contiene texto; las etiquetas dentro del elemento se ignoran.	                </td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="new" title="Documentación">title</a></td>
+                    <td><p>Establecer una pieza de informacion para que motores de busqueda encuentren la pagina.</p></td>
+                    <td class="noJust">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Título de la Página&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Contenido de la página --&gt;<br>
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </td>
+                    <td>
+                        *Los resultados se muestran en el nombre de la pestaña en el browser*
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;meta&gt;</td>
+                    <td>El elemento HTML meta representa metadatos que no pueden ser representados por otros metadatos HTML- elementos relacionados, como base, link, script, style o title.	                    </td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="new" title="Documentación">meta</a></td>
+                    <td><p>Proporcionar informacion del documento por medio de atributos, con charset como su atributo definimos la codificacion de caracteres usados en el documento.</p></td>
+                    <td class="noJust">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="author" content="Nombre del Autor"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="description" content="Descripción de la página"&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="keywords" content="palabra clave 1, palabra clave 2, palabra clave 3"&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Contenido de la página --&gt;<br>
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </td>
+                    <td>
+                        *Esta etiqueta tiene principal relacion con configuraciones del documento html*
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textCen">&lt;head&gt;</td>
+                    <td>El elemento HTML head contiene información legible por máquina (metadatos) sobre el documento, como su título, guiones y hojas de estilo.	                    </td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="new" title="Documentación">head</a></td>
+                    <td><p>Proporcionar informacion del documento visible para el navegador y no para el usuario.</p></td>
+                    <td class="noJust">
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &nbsp;&nbsp;&lt;head&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Título de la Página&lt;/title&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Otras etiquetas meta u enlaces CSS pueden ir aquí --&gt;<br>
+                        &nbsp;&nbsp;&lt;/head&gt;<br>
+                        &nbsp;&nbsp;&lt;body&gt;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Contenido de la página --&gt;<br>
+                        &nbsp;&nbsp;&lt;/body&gt;<br>
+                        &lt;/html&gt;
+                    </td>
+                    <td>
+                        *Lo unico visible de esta etiqueta en el documento html, es el titulo en la pestaña de la pagina*
+                    </td>
+                </tr>
+                <tr>    
+                    <td class="textCen">&lt;body&gt;</td>
+                    <td>El elemento body representa el contenido del documento html.</td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="new" title="Documentación">body</a></td>
+                    <td><p>Representar el contenido del documento html.</p></td>
+                    <td>
+                        &lt;body&gt;<br>
+                        &nbsp;&nbsp;&lt;h1&gt;Título del Cuerpo&lt;/h1&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es un párrafo dentro del cuerpo de la página.&lt;/p&gt;<br>
+                        &lt;/body&gt;
+                    </td>
+                    <td>
+                        <h1>Título del Cuerpo</h1>
+                        <p>Este es un párrafo dentro del cuerpo de la página.</p>        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="flex-container presentacionTablas">
+            <h2 id="mantex">Elementos de manejo de texto</h2>
+            <a href="#principal">
+                <img src="https://cdn-icons-png.flaticon.com/256/2026/2026901.png" alt="volver al encabezado">
+            </a>
+        </div>
+        <table>
+            <caption>Listado de etiquetas de Elementos de Manejo de texto</caption>
+            <thead>
+             <tr>
+                <th class="textCen">Elemento</th>
+                <th class="textCen">Descripcion</th>
+                <th class="textCen">Documentacion</th>
+                <th class="textCen">Uso</th>
+                <th class="textCen">Ejemplo</th>
+                <th class="textCen">Resultado</th>
+             </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="textCen">&lt;h1-h6&gt;</td>
+                    <td>Los elementos HTML h1 a h6 representan seis niveles de encabezados de sección. h1 es el más alto nivel de sección y h6 es el más bajo.</td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements" target="new" title="Documentación">h1 y h6</a></td>
+                    <td>
+                        <ul>
+                            <li>Los agentes de usuario pueden utilizar la información de encabezado para crear una tabla de contenido para un documento automática.</li>
+                            <li>No utilice elementos calefactores para cambiar el tamaño del texto. En su lugar, utilice la propiedad CSS font-size.</li>
+                            <li>No se salte los niveles de encabezado: comience siempre desde h1 , seguido de h2 y así sucesivamente.</li>
+                        </ul>                
+                    </td>
+                    <td>
+                        &lt;h1&gt;Título de nivel 1 (h1)&lt;/h1&gt;<br>
+                        &lt;h2&gt;Título de nivel 2 (h2)&lt;/h2&gt;<br>
+                        &lt;h3&gt;Título de nivel 3 (h3)&lt;/h3&gt;<br>
+                        &lt;h4&gt;Título de nivel 4 (h4)&lt;/h4&gt;<br>
+                        &lt;h5&gt;Título de nivel 5 (h5)&lt;/h5&gt;<br>
+                        &lt;h6&gt;Título de nivel 6 (h6)&lt;/h6&gt;
+                    </td>
+                    <td>
+                        <h1>Título de nivel 1 (h1)</h1>
+                        <h2>Título de nivel 2 (h2)</h2>
+                        <h3>Título de nivel 3 (h3)</h3>
+                        <h4>Título de nivel 4 (h4)</h4>
+                        <h5>Título de nivel 5 (h5)</h5>
+                        <h6>Título de nivel 6 (h6)</h6>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;p&gt;</td>
+                    <td>
+                        <p>El elemento HTML p representa un párrafo. Los párrafos generalmente se representan en medios visuales
+                        como bloques de texto separados de bloques adyacentes por líneas en blanco y / o sangría de primera línea, pero
+                        Los párrafos HTML pueden ser cualquier agrupación estructural de contenido relacionado, como imágenes o campos de formulario.</p>
+                        <p>Los párrafos son elementos de nivel de bloque y, en particular, se cerrarán automáticamente si otro nivel de bloque
+                        el elemento se analiza antes de la etiqueta de cierre /p. Consulte </p>
+                    </td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="new" title="Documentación">p</a></td>
+                    <td> Definir un párrafo.</td>
+                    <td>
+                        &lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+                    </td>
+                    <td>
+                        <p>Este es un párrafo de ejemplo.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;br&gt;</td>
+                    <td>El elemento HTML br produce un salto de línea en el texto (retorno de carro). Es útil para escribir un poema o una dirección, donde la división de líneas es significativa.</td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br" target="new" title="Documentación">br</a></td>
+                    <td>Definir un salto de línea.</td>
+                    <td>&lt;br&gt;</td>
+                    <td>*Realiza un salto de linea*</td>
+                </tr>
+                    
+                <tr>
+                    <td class="textCen">&lt;hr&gt;</td>
+                    <td><p>El elemento HTML hr representa una ruptura temática entre elementos de nivel de párrafo: por ejemplo, un cambio de escena en una historia o un cambio de tema dentro de una sección.</p></td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="new" title="Documentación">hr</a></td>
+                    <td><p>Define un cámbio de temática a partir de una línea dibujada.</p></td>
+                    <td>&lt;hr&gt;</td>
+                    <td><hr></td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;wbr&gt;</td>
+                    <td>El elemento HTML wbr representa una oportunidad de salto de palabra, una posición dentro del texto donde el navegador puede opcionalmente romper una línea, aunque sus reglas de salto de línea no crearían un salto en esa ubicación.</td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr" target="new" title="Documentación">wbr</a></td>
+                    <td><p>Define un posible salto de linea.</p></td>
+                    <td class="noJust">
+                        Una palabra&lt;wbr&gt;larga&lt;wbr&gt;dividida&lt;wbr&gt;en tres partes.
+                    </td>
+                    <td>
+                        *al disminuir la pantalla provoca un salto de palabra*
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;sup&gt;</td>
+                    <td><p>El elemento HTML sup especifica el texto en línea que se mostrará como superíndice solo por razones tipográficas. Los superíndices generalmente se representan con una línea base elevada utilizando texto más pequeño.</p></td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="new" title="Documentación">sup</a></td>
+                    <td>
+                        <p>El elemento  sup  solo debe usarse por razones tipográficas, es decir, para cambiar la posición del texto para cumplir con las convenciones o estándares tipográficos, en lugar de solo con fines de presentación o apariencia. <br>
+                        Por ejemplo, para diseñar la marca denominativa de una empresa o producto que utiliza una línea de base elevada, se debe hacer usando CSS (lo más probable es que se alinee verticalmente) en lugar de sup. Esto se haría usando, por ejemplo, vertical-align: super o, para desplazar la línea base hacia arriba un 50%, vertical-align: 50%.<br>
+                        Los casos de uso apropiados para sup incluyen (pero no se limitan necesariamente a):</p>
+                
+                        <ul>
+                            <li>Mostrar exponentes, como "x 3 ."Puede valer la pena considerar el uso de MathML para estos, especialmente en casos más complejos . Vea los exponentes en los ejemplos a continuación.</li>
+                            <li>Visualización de letras superiores, que se utilizan en algunos idiomas al representar ciertas abreviaturas. Por ejemplo, en francés, la palabra "mademoiselle" se puede abreviar "M^lle"; este es un caso de uso aceptable. Consulte Letras Superiores para ver ejemplos.</li>
+                            <li>Representar números ordinales, como "4th" en lugar de "fourth"."Ver números ordinales para ejemplos.</li>
+                        </ul>                    
+                    </td>
+                    <td class="noJust">
+                        Este es un texto&lt;sup&gt;superíndice&lt;/sup&gt;de ejemplo.
+                    </td>
+                    <td class="noJust">
+                        Este es un texto<sup>superíndice</sup>de ejemplo.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;sub&gt;</td>
+                    <td><p>El elemento HTML sub especifica texto en línea que debe mostrarse como subíndice solo por razones tipográficas. Los subíndices se representan normalmente con una línea de base reducida utilizando texto más pequeño.</p></td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="new" title="Documentación">sub</a></td>
+                    <td>
+                        <p>El elemento  sub debe usarse solo por razones tipográficas, es decir, para cambiar la posición del texto para cumplir con las convenciones o estándares tipográficos, en lugar de solo con fines de presentación o apariencia.<br>
+                        Por ejemplo, usar  sub  para estilizar el nombre de una empresa que usa líneas de base alteradas en su marca denominativa no sería apropiado; en su lugar, se debe usar CSS. Por ejemplo, puede usar la propiedad vertical-align con una declaración como vertical-align: sub o, para controlar con mayor precisión el desplazamiento de la línea base, vertical-align: -25%. <br>
+                        Los casos de uso apropiados para sub incluyen (pero no se limitan necesariamente a):</p>
+                        <ul>
+                            <li>Marcar números de notas al pie. Vea los números de las notas a pie de página para ver un ejemplo.</li>
+                            <li>Marcar el subíndice en números variables matemáticos (aunque también puede considerar usar una fórmula MathML para esto). Consulte Subíndices de variables.</li>
+                            <li>Denota el número de átomos de un elemento dado dentro de una fórmula química (como el mejor amigo de cada desarrollador, C8h10n4o2, también conocido como "cafeína"). Ver Fórmulas químicas.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        Este es un texto&lt;sub&gt;subíndice&lt;/sub&gt;de ejemplo.
+                    </td>
+                    <td>
+                        Este es un texto<sub>subíndice</sub>de ejemplo.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;strong&gt;</td>
+                    <td><p>El elemento HTML strong indica que su contenido tiene una gran importancia, seriedad o urgencia. Los navegadores suelen mostrar el contenido en negrita.</p></td>
+                    <td class="textCen"><a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="new" title="Documentación">strong</a></td>
+                    <td>
+                        <p>
+                            El elemento strong es para contenido que es de "gran importancia", incluidas cosas de gran importancia gravedad o urgencia (como advertencias). Esta podría ser una oración que es de gran importancia para toda la página, o simplemente podría tratar de señalar que algunas palabras son de mayor importancia en comparación con el contenido cercano. <br>
+                            Normalmente, este elemento se representa de forma predeterminada con un peso de fuente en negrita. Sin embargo, no debe usarse para aplicar estilos en negrita, use la propiedad CSS font-weight para ese propósito. Utilice el elemento b para llama la atención sobre cierto texto sin indicar un mayor nivel de importancia. Utilice el elemento em para marcar texto que tiene énfasis en el acento. <br>
+                            Otro uso aceptado para strong es denotar las etiquetas de los párrafos que representan notas o advertencias dentro del texto de una página.
+                        </p>
+                    </td>
+                    <td>Este es un texto &lt;strong&gt;fuerte&lt;/strong&gt; de ejemplo.</td>
+                    <td>
+                        Este es un texto <strong>fuerte</strong> de ejemplo.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;em&gt;</td>
+                    <td><p>El elemento HTML em marca el texto que tiene énfasis en el acento. El elemento em puede anidarse, indicando cada nivel de anidamiento un mayor grado de énfasis.</p></td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="new" title="Documentación">em</a></td>
+                    <td>
+                        <p>
+                            El elemento em es para palabras que tienen un énfasis acentuado en comparación con el texto circundante que a menudo se limita a una palabra o palabras de una oración y afecta el significado de la oración en sí.
+                            Normalmente, este elemento se muestra en cursiva. Sin embargo, no debe usarse para aplicar estilos en cursiva; use la propiedad CSS font-style para ese propósito. Utilice el elemento cite para marcar el título de una obra (libro, obra de teatro, canción, etc.).). Utilice el elemento i para marcar texto que está en un tono o estado de ánimo alternativo, que cubre muchas situaciones comunes para cursiva, como nombres científicos o palabras en otros idiomas. Utilice el elemento strong para marcar el texto que tiene mayor importancia que el texto circundante.
+                        </p>
+                    </td>
+                    <td class="noJust">Este es un texto &lt;em&gt;enfático&lt;/em&gt; de ejemplo.</td>
+                    <td>
+                        *Sirve para que el screen reader le ponga enfasis al leer la palabra*
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;mark&gt;</td>
+                    <td><p>El elemento HTML mark representa texto que está marcado o resaltado para fines de referencia o notación debido a la relevancia del pasaje marcado en el contexto adjunto.</p></td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="new" title="Documentación">mark</a></td>
+                    <td>
+                        <ul>
+                            <li> Cuando se usa en una cita q o en una cita en bloque blockquote, generalmente indica texto que es de especial interés 
+                                pero que no está marcado en el material fuente original, o material que necesita un escrutinio especial a pesar de que el autor
+                                original no pensó que era de particular importancia. Piense en esto como usar un rotulador resaltador en un libro para marcar
+                                pasajes que le resulten interesantes.</li>
+                            <li>De lo contrario, mark indica una parte del contenido del documento que probablemente sea relevante para la actividad actual del
+                                usuario. Esto podría usarse, por ejemplo, para indicar las palabras que coincidieron con una operación de búsqueda.</li>
+                            <li>No use mark para resaltar la sintaxis; en su lugar, use el elemento span con CSS apropiado aplicado.</li>
+                        </ul>    
+                    </td>
+                    <td>
+                        Este es un &lt;mark&gt;texto resaltado&lt;/mark&gt; de ejemplo.
+                    </td>
+                    <td>
+                        Este es un <mark>texto resaltado</mark> de ejemplo.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;q&gt;</td>
+                    <td><p>El elemento HTML q indica que el texto adjunto es una comilla corta en línea. La mayoría de los navegadores modernos implementan esto rodeando el texto entre comillas. Este elemento está destinado a citas cortas que no requieren saltos de párrafo; para citas largas, use el elemento blockquote.</p></td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q" target="new" title="Documentación">q</a></td>
+                    <td><p>Definir una cita corta.</p></td>
+                    <td>&lt;q&gt;Cita en línea de ejemplo.&lt;/q&gt;</td>
+                    <td>
+                        <q>Cita en línea de ejemplo.</q>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;blockquote&gt;</td>
+                    <td><p>El elemento HTML blockquote indica que el texto adjunto es una cita extendida. Por lo general, esto se representa visualmente mediante sangría (consulte las notas para saber cómo cambiarlo). Una URL para la fuente de la cita se puede dar usando el atributo cite, mientras que una representación de texto de la fuente se puede dar usando el elemento cite.</p></td>
+                    <td class="textCen">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="new" title="Documentación">blockquote</a>
+                    </td>
+                    <td>
+                        <p>
+                            Para cambiar la sangría aplicada al texto entrecomillado, utilice las propiedades CSS margin-left y / o margin-right, o la propiedad margin shorthand.
+                            <br>Para incluir comillas más cortas en línea en lugar de en un bloque separado, use el elemento q (Comillas).
+                        </p>
+                    </td>
+                    <td class="noJust">
+                        &lt;blockquote&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Este es un bloque de cita de ejemplo.&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;footer&gt;— Autor de la cita&lt;/footer&gt;<br>
+                        &lt;/blockquote&gt;
+                    </td>
+                    <td>
+                        <blockquote>
+                            <p>Este es un bloque de cita de ejemplo.</p>
+                            <footer>— Autor de la cita</footer>
+                        </blockquote>  
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;cite&gt;</td>
+                    <td><p>El elemento HTML cite se utiliza para marcar el título de una obra creativa citada. La referencia puede estar en una forma abreviada de acuerdo con convenciones apropiadas para el contexto relacionadas con los metadatos de citas.</p></td>
+                    <td class="textCen"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="new" title="Documentación">cite</a></td>
+                    <td>
+                        <p>
+                            En el contexto del elemento cite, un trabajo creativo que podría citarse podría ser, por ejemplo, uno de los siguientes: Libro,
+                            Un trabajo de investigación, Ensayo, Poema, Una partitura musical, Canto, Un guión de una obra de teatro o película, Cine, Un programa de televisión, Juego, Escultura, Pintura, Una producción teatral, Juego, Opera, Musical,
+                            Expositivo, Un informe de caso legal, Un programa de computadora, Website, Una página web, Una publicación de blog o un comentario, Una publicación o comentario en el foro, Tweet, Una publicación de Facebook, Una declaración escrita u oral
+                            Para incluir una referencia a la fuente del material citado que está contenido dentro de un elemento blockquote o q, use el atributo cite en el elemento.
+                            Normalmente, los navegadores diseñan el contenido de un elemento  cite en cursiva de forma predeterminada. Para evitar esto, aplique la propiedad CSS font-style al elemento  cite.
+                        </p>
+                    </td>
+                    <td>
+                        &lt;cite&gt;Nombre del libro&lt;/cite&gt;
+                    </td>
+                    <td>
+                        <cite>Nombre del libro</cite>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;dfn&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML dfn se utiliza para indicar el término que se define en el contexto de una frase u oración de definición. El elemento p antepasado, el emparejamiento dt/dd, o el antepasado section más cercano del elemento dfn, se considera la definición del término.
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn" target="new" title="Documentación">dfn</a>
+                    </td>
+                    <td>
+                        <p>
+                            Hay algunos aspectos no del todo obvios para usar el elemento dfn. Los examinamos aquí.
+                            El término que se está definiendo se identifica siguiendo estas reglas:
+                        </p>
+                        <ol>
+                            <li>Si el elemento dfn tiene un atributo title, se considera que el valor del atributo title es el término que se está definiendo. El elemento aún debe tener texto dentro de él, pero ese texto puede ser una abreviatura (tal vez usando abbr) u otra forma del término.</li>
+                            <li> Si el  dfn  contiene un solo elemento secundario y no tiene ningún contenido de texto propio, y el elemento secundario es un elemento &lt; abbr &gt; con un atributo de título en sí mismo, entonces el valor exacto del título del elemento abbr  es el término que se está definiendo.</li>
+                            <li>De lo contrario, el contenido de texto del elemento dfn es el término que se está definiendo. Esto se muestra en el primer ejemplo a continuación.</li>
+                        </ol>
+                    </td>
+                    <td>
+                        &lt;dfn&gt;Definición de un término&lt;/dfn&gt;
+                    </td>
+                    <td>
+                        <dfn>Definición de un término</dfn>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;abbr&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML abbr representa una abreviatura o acrónimo.
+                            Al incluir una abreviatura o acrónimo, proporcione una expansión completa del término en texto sin formato en el primer uso, junto con el &lt; abbr &gt; para marcar la abreviatura. Esto informa al usuario lo que significa la abreviatura o acrónimo.
+                            El atributo de título opcional puede proporcionar una expansión para la abreviatura o acrónimo cuando no está presente una expansión completa. Esto proporciona una pista a los agentes de usuario sobre cómo anunciar / mostrar el contenido al tiempo que informa a todos los usuarios lo que significa la abreviatura. Si está presente, el título debe contener esta descripción completa y nada más.         
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="new" title="Documentación">abbr</a>
+                    </td>
+                    <td>
+                        <p>
+                            Ciertamente, no es necesario que todas las abreviaturas se marquen con  abbr. Sin embargo, hay algunos casos en los que es útil hacerlo:
+                        </p>
+                        <ul>
+                            <li>Cuando se usa una abreviatura y desea proporcionar una expansión o definición fuera del flujo del contenido del documento, use  abbr  con un título apropiado .</li>
+                            <li>Para definir una abreviatura que puede ser desconocida para el lector, presente el término usando abbr  y texto en línea que proporcione la definición. Incluya un atributo de título solo cuando la expansión o definición en línea no esté disponible.</li>
+                            <li>Cuando es necesario anotar semánticamente la presencia de una abreviatura en el texto, el elemento  abbr es útil. Esto se puede usar, a su vez, para fines de estilo o secuencias de comandos.</li>
+                            <li>Puede usar  abbr  junto con  dfn para establecer definiciones de términos que son abreviaturas o acrónimos. Vea el ejemplo que define una abreviatura a continuación.</li>
+                        </ul>
+                    </td>
+                    <td class="noJust">
+                        &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;
+                    </td>
+                    <td>
+                        <abbr title="Hypertext Markup Language">HTML</abbr>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;small&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML small representa comentarios laterales y letra pequeña, como derechos de autor y texto legal, independientemente de su
+                            presentación con estilo. De forma predeterminada, muestra el texto dentro de él un tamaño de fuente más pequeño, como de pequeño a x-pequeño.
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small" target="new" title="Documentación">small</a>
+                    </td>
+                    <td>
+                        <p>Definir texto pequeño.</p>
+                    </td>
+                    <td>
+                        &lt;small&gt;Texto pequeño&lt;/small&gt;
+                    </td>
+                    <td>
+                        <small>Texto pequeño</small>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;ins&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML ins representa un rango de texto que se ha agregado a un documento. Puede usar el elemento supr para representar de manera similar un rango de texto que se ha eliminado del documento.
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="new" title="Documentación">ins</a>
+                    </td>
+                    <td>
+                        <p>
+                            Definir texto que ha sido insertado en un documento.
+                        </p>
+                    </td>
+                    <td>
+                        &lt;ins&gt;Texto insertado&lt;/ins&gt;
+                    </td>
+                    <td>
+                        <ins>Texto insertado</ins>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;del&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML del representa un rango de texto que se ha eliminado de un documento. Esto se puede usar al representar "cambios de pista" o información de diferencias de código fuente, por ejemplo. El elemento ins se puede usar para el propósito opuesto: para indicar texto que se ha agregado al documento.	                    
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="new" title="Documentación">del</a>
+                    </td>
+                    <td>
+                        <p>Define un texto que ha sido definido en un Mdocument </p>                 
+                    </td>
+                    <td>
+                        &lt;del&gt;Texto eliminado&lt;/del&gt;
+                    </td>
+                    <td>
+                        <del>Texto eliminado</del>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;code&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML code muestra su contenido con un estilo destinado a indicar que el texto es un fragmento corto de código de computadora. De forma predeterminada, el texto del contenido se muestra con la fuente monoespacio predeterminada del agente de usuario.	
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="new" title="Documentación">code</a>
+                    </td>
+                    <td>
+                        <p>
+                            Definir un trozo de código de programación.
+                        </p>
+                    </td>
+                    <td>
+                        &lt;code&gt;console.log('Hola, mundo!');&lt;/code&gt;
+                    </td>
+                    <td>
+                        <code>console.log('Hola, mundo!');</code>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;samp&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML samp se usa para encerrar texto en línea que representa la salida de muestra (o entre comillas) de un programa de computadora. Su contenido se representa normalmente utilizando la fuente monoespaciada predeterminada del navegador(como Courier o Lucida Console).
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp" target="new" title="Documentación">samp</a>
+                    </td>
+                    <td>
+                        <p>
+                            Usar una regla CSS para anular la fuente predeterminada del navegador para el elemento samp; sin embargo, es posible que las preferencias del navegador tengan prioridad sobre cualquier CSS que especifique.
+                        </p>
+                    </td>
+                    <td>
+                        &lt;samp&gt;El resultado es: 42&lt;/samp&gt;
+                    </td>
+                    <td>
+                        <samp>El resultado es: 42</samp>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;kbd&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML kbd representa un tramo de texto en línea que denota la entrada de texto del usuario desde un teclado, entrada de voz o cualquier otro dispositivo de entrada de texto. Por convención, el agente de usuario procesa por defecto el contenido de un elemento kbd utilizando su fuente monoespacio predeterminada, aunque esto no es obligatorio por el estándar HTML.	
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd" target="new" title="Documentación">kbd</a>
+                    </td>
+                    <td>
+                        <p>Se pueden usar otros elementos en conjunto con  kbd para representar escenarios más específicos:</p>
+                        <ul>
+                            <li>Anidar un elemento  kbd  dentro de otro elemento  kbd representa una clave real u otra unidad de entrada como una parte de una entrada más grande. Consulte Representación de pulsaciones de teclas dentro de una entrada a continuación.</li>
+                            <li>Anidar un elemento  kbd dentro de un elemento samp  representa la entrada que el sistema ha devuelto al usuario. Consulte la entrada con eco, a continuación, para ver un ejemplo.</li>
+                            <li>Anidar un elemento  samp  dentro de un elemento  kbd, por otro lado, representa la entrada que se basa en el texto presentado por el sistema, como los nombres de los menús y los elementos del menú, o los nombres de los botones que se muestran en la pantalla. Vea el ejemplo en Representación de opciones de entrada en pantalla a continuación.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;
+                    </td>
+                    <td>
+                        <kbd>Ctrl</kbd> + <kbd>C</kbd>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;pre&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML pre representa texto preformateado que debe presentarse exactamente como está escrito en el archivo HTML. Por lo general, el texto se representa con una fuente no proporcional o monoespaciada. Los espacios en blanco dentro de este elemento se muestran como están escritos.	
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a class="enlace" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre" target="new" title="Documentación">pre</a>
+                    </td>
+                    <td>
+                        <p>Define texto pre-formateado.</p>
+                    </td>
+                    <td>
+                        &lt;pre&gt;
+                        Este es un bloque de texto preformateado.
+                        Puedes incluir espacios y saltos de línea
+                        exactamente como los escribas aquí.
+                        &lt;/pre&gt;
+                    </td>
+                    <td>
+                        *Puedes insertar cualquier dibujo hecho con los simbolos del teclado del computador*                         
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="textCen">&lt;address&gt;</td>
+                    <td>
+                        <p>
+                            El elemento HTML address indica que el HTML adjunto proporciona información de contacto para una persona o personas, o para una organización.	
+                        </p>
+                    </td>
+                    <td class="textCen">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/adress" target="new" title="Documentación">address</a>
+                    </td>
+                    <td>
+                        <p>
+                            Define la información de contacto del autor / propietario del documento.
+                        </p>
+                    </td>
+                    <td class="noJust">
+                        &lt;address&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Nombre del destinatario&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Dirección de la calle&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Ciudad, País&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Teléfono: 123-456-7890&lt;/p&gt;<br>
+                        &nbsp;&nbsp;&lt;p&gt;Correo electrónico: ejemplo@dominio.com&lt;/p&gt;<br>
+                        &lt;/address&gt;
+                    </td>
+                    <td>
+                        <address>
+                            <p>Nombre del destinatario</p>
+                            <p>Dirección de la calle</p>
+                            <p>Ciudad, País</p>
+                            <p>Teléfono: 123-456-7890</p>
+                            <p>Correo electrónico: ejemplo@dominio.com</p>
+                        </address> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <div class="presentacionTablas final">
+        <a href="#principal">
+            <img src="https://cdn-icons-png.flaticon.com/256/2026/2026901.png" alt="volver al encabezado">
+        </a>
+    </div>
+    <footer id="pie" class="piePag">
+        <p>&copy; 2023 Manual HTML- Todos los derechos reservados</p>
+        <p>Para consultas y soporte, contáctame en:</p>
+        <address>
+          <p>Correo electrónico: <a href="mailto:fabio.mojica@ucb.edu.bo">fabio.mojica@ucb.edu.bo</a></p>
+          <p>Teléfono: +591 68496505</p>
+        </address>
+    </footer>   
+</body>
+</html>
